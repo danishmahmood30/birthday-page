@@ -6,7 +6,7 @@ steps:
       - -c
       - |
         gcloud auth configure-docker us-central1-docker.pkg.dev
-        docker build -t us-central1-docker.pkg.dev/single-odyssey-305316/test-artifact-repository/birthday:$SHORT_SHA -t  us-central1-docker.pkg.dev/single-odyssey-305316/test-artifact-repository/birthday:latest
+        docker build -t us-central1-docker.pkg.dev/single-odyssey-305316/test-artifact-repository/birthday:$SHORT_SHA -t  us-central1-docker.pkg.dev/single-odyssey-305316/test-artifact-repository/birthday:latest .
         docker push --all-tags us-central1-docker.pkg.dev/single-odyssey-305316/test-artifact-repository/birthday
 
 options:
