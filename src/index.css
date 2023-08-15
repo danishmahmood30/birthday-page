@@ -44,6 +44,7 @@ body {
     justify-content: center;
 }
 
+
 .container {
   color: #333;
   margin: 0 auto;
@@ -77,8 +78,32 @@ li span {
 }
 
 .emoji span {
-  font-size: 4rem;
+  font-size: 3rem;
   padding: 0 .5rem;
+}
+
+canvas {
+  display: none;
+}
+#content {
+  /* z-index: 100; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  /* font-family: "Source Sans Pro"; */
+  /* font-size: 5em; */
+  /* font-weight: 900; */
+  -webkit-user-select: none;
+  user-select: none;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.images  {
+  display: block;
 }
 
 @media all and (max-width: 768px) {
@@ -92,5 +117,8 @@ li span {
   
   li span {
     font-size: calc(3.375rem * var(--smaller));
+  }
+  .emoji span {
+    font-size: calc(1.725rem * var(--smaller));;
   }
 }

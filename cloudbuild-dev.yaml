@@ -1,0 +1,21 @@
+steps:
+  - id: dockerise
+    name: gcr.io/google.com/cloudsdktool/cloud-sdk:latest
+    entrypoint: 'sh'
+    args:
+      - -c
+      - |
+        gcloud auth configure-docker us-central1-docker.pkg.dev
+        docker build -t us-central1-docker.pkg.dev/single-odyssey-305316/test-artifact-repository/birthday-dev:$SHORT_SHA -t  us-central1-docker.pkg.dev/single-odyssey-305316/test-artifact-repository/birthday-dev:latest .
+        docker push --all-tags us-central1-docker.pkg.dev/single-odyssey-305316/test-artifact-repository/birthday-dev
+  
+  - id: Deploy new Revison
+    name: gcr.io/google.com/cloudsdktool/cloud-sdk:latest
+    entrypoint: 'bash'
+    args:
+      - -c
+      - |
+        gcloud run deploy birthday-dev --platform managed --project single-odyssey-305316 --image us-central1-docker.pkg.dev/single-odyssey-305316/test-artifact-repository/birthday-dev:latest --region us-central1 --ingress all --service-account=terraform-srv-acc@single-odyssey-305316.iam.gserviceaccount.com --allow-unauthenticated
+
+options:
+  logging: CLOUD_LOGGING_ONLY
