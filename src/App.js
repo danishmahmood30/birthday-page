@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { useEffect } from 'react';
+import { click } from '@testing-library/user-event/dist/click';
 
 function App() {
 
@@ -218,6 +219,12 @@ document.ontouchstart = evt => birth.onClick(evt)
 
     };
 
+  function clickHere() {
+    console.log("clicked")
+    document.getElementById("content").style.display = "None";
+    document.querySelector(".card").style.display = "block";
+  }
+
     window.onload = (event) => {
       console.log("page is fully loaded");
     };
@@ -241,13 +248,36 @@ document.ontouchstart = evt => birth.onClick(evt)
         </ul>
       </div>
       <div id="content" className="emoji">
-
-        <img className="images" src="birthday.png" width="200px" height="200px"></img>
-        <span>🥳</span>
+      <img className="images2" src="cake2.png" height="200px"></img>
+        <img className="images" src="birthday-2.png" height="200px"></img>
+        <div class="heart heart-bg"></div>
+        <div class="heart heart-main" onClick={clickHere}><p>Radhika</p></div>
+        {/* <span>🥳</span>
         <span>🎉</span>
         <span>🎂</span>
+        <button onClick={clickHere}>Click me</button> */}
       </div>
       
+      <div className="card">
+        <div className="imgBox">
+          <div className="bark"></div>
+          <img src="https://image.ibb.co/fYzTrb/lastofus.jpg"></img>
+        </div>
+        <div className="details">
+          {/* <h4 className="color1">You're not a Fossil! (YET)</h4>
+          <h4 className="color2 margin">(HAPPY BIRTHDAY)</h4> */}
+          <p>Dear Dad,</p>
+          <p>Let's see.. .</p>
+          <p>You’re never around, you</p>
+          <p>hate the music I’m into, you</p>
+          <p>practically despise the movies I</p>
+          <p>like, and yet somehow you still</p>
+          <p>manage to be the best dad every year.</p>
+          <p>How do you do that? </p>
+          <p className="text-right">Happy Birthday, papa!</p>
+          <p className="text-right">♥Sarah</p>
+        </div>
+      </div>
     </div>
   );
 
