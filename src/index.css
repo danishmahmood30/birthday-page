@@ -228,15 +228,16 @@ h4 {
 	box-sizing: border-box;
 	padding: 0 0 0 10px;
 	z-index: -1;
-	margin-top: 70px;
+	margin-top: 40px;
   /* display: flex; */
 }
 
 .card .details p {
-	font-size: 15px;
-	line-height: 15px;
+	font-size: 12px;
+	line-height: 16px;
 	/* transform: rotate(-1deg);   */
 	padding: 0 0 0 20px;
+  text-align: left;
 }
 
 .card .details h4 {
@@ -245,7 +246,7 @@ h4 {
 
 .text-right {
 	text-align: right;
-  margin-right: 20px;
+  /* margin-right: 20px; */
 }
 
 

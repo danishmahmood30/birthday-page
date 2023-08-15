@@ -191,7 +191,7 @@ document.ontouchstart = evt => birth.onClick(evt)
     //end
     // console.log(birthday)
     // console.log(mm)
-    const countDown = new Date(2023, 7, 15, 16, 10, 0)
+    const countDown = new Date(2023, 7, 15, 23, 24, 0)
     // console.log(new Date().getMonth()),
      const x = setInterval(function() {    
 
@@ -268,16 +268,19 @@ document.ontouchstart = evt => birth.onClick(evt)
         <div className="details">
           {/* <h4 className="color1">You're not a Fossil! (YET)</h4>
           <h4 className="color2 margin">(HAPPY BIRTHDAY)</h4> */}
-          <p>Dear Dad,</p>
-          <p>Let's see.. .</p>
-          <p>You’re never around, you</p>
+          <p>Dear Radhika♥,</p>
+          <br></br>
+          <p>Happiest Birthday to you. I wish I could spent the best day on earth with you in person, holding your </p>
+          <p>hands but I think I still need to wait for that day.</p>
+          <p>My love, I wish you a very healthy and happy and prosperous life. A life I will do anything to be part of. </p>
           <p>hate the music I’m into, you</p>
-          <p>practically despise the movies I</p>
-          <p>like, and yet somehow you still</p>
-          <p>manage to be the best dad every year.</p>
-          <p>How do you do that? </p>
-          <p className="text-right">Happy Birthday, papa!</p>
-          <p className="text-right">♥Sarah</p>
+          <p>Three months have passed and it feels that we have known each other for years</p>
+          <p>Babe, I love you more than anything in this world. I dont know what the future lies for us but I'm sure of one thing that I will always keep you happy and safe at the cost of my life. Just be with me, Love. Pleae never leave me. I wont be able to live without you.</p>
+          <p>I want you for always...days, years, eternities.</p>
+          <p>Just grow old along with me babe! The best is yet to be </p>
+          <br></br>
+          <p className="text-right">Love you always!</p>
+          <p className="text-right">♥Danish</p>
         </div>
       </div>
     </div>
