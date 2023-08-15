@@ -10,7 +10,8 @@ steps:
         docker push --all-tags us-central1-docker.pkg.dev/single-odyssey-305316/test-artifact-repository/birthday
   
   - id: Deploy new Revison
-    name: 'gcr.io/cloud-builders/gcloud'
+    name: gcr.io/google.com/cloudsdktool/cloud-sdk:latest
+    entrypoint: 'bash'
     args:
       - -c
       - |
