@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import { useEffect } from 'react';
 
 function App() {
 
@@ -34,7 +35,7 @@ function App() {
             distance = countDown - now;
       
       console.log(distance, countDown, now)
-      document.getElementById("days").innerText = Math.floor(distance / (day)) 
+      document.getElementById("days").textContent = Math.floor(distance / (day)) 
         document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour))
         document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute))
         document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
@@ -53,9 +54,14 @@ function App() {
 
     window.onload = (event) => {
       console.log("page is fully loaded");
-      test();
+      // test();
     };
 
+    useEffect(()=> {
+      console.log("Component loaded")     
+      test();          
+    })
+    
   return (
     <div className="container">
       <h1 id="headline">Radhika, My Love</h1>
