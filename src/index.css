@@ -256,16 +256,16 @@ h4 {
   top: 50%;
 }
 
-.images2 {
+.images2 { 
   /* position: absolute; */
   padding-left: 10px;
-}
+ }
 .heart {
   position: absolute;
   width: 100px;
   height: 90px;
   top: 110%;
-  left: 50%;
+  left: 40%;
   margin-top: -45px;
   margin-left: -50px;
   text-align: center;
@@ -275,15 +275,15 @@ h4 {
     content: '';
     position: absolute;
     top: 0;
-    width: 50px;
-    height: 80px;
+    width: 75px;
+    height: 120px;
     background: #f00437;
     border-radius: 50px 50px 0 0;
   }
   
   &:before {
     z-index: -1;
-    left: 50px;
+    left: 75px;
     transform: rotate(-45deg);
     transform-origin: 0 100%;
   }
@@ -341,6 +341,7 @@ h4 {
   }
 }
 
-.heart p {
-  padding-top: 18px;
+.heart img {
+  padding-top: 30px;
+  padding-left: 30px;
 }

@@ -251,7 +251,9 @@ document.ontouchstart = evt => birth.onClick(evt)
       <img className="images2" src="cake2.png" height="200px"></img>
         <img className="images" src="birthday-2.png" height="200px"></img>
         <div class="heart heart-bg"></div>
-        <div class="heart heart-main" onClick={clickHere}><p>Radhika</p></div>
+        <div class="heart heart-main" onClick={clickHere}>
+          <img src="https://see.fontimg.com/api/renderfont4/9Y5Xy/eyJyIjoiZnMiLCJoIjo4MSwidyI6MTI1MCwiZnMiOjY1LCJmZ2MiOiIjRkZGRUZFIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/UmFkaGlrYQ/loftygoals-regular.png" width="120px"></img>
+        </div>
         {/* <span>🥳</span>
         <span>🎉</span>
         <span>🎂</span>
