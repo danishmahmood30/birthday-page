@@ -191,7 +191,7 @@ document.ontouchstart = evt => birth.onClick(evt)
     //end
     // console.log(birthday)
     // console.log(mm)
-    const countDown = new Date(2023, 7, 15, 23, 37, 0)
+    const countDown = new Date(2023, 7, 16, 0, 0, 0)
     // console.log(new Date().getMonth()),
      const x = setInterval(function() {    
 
