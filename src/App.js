@@ -263,7 +263,7 @@ document.ontouchstart = evt => birth.onClick(evt)
       <div className="card">
         <div className="imgBox">
           <div className="bark"></div>
-          <img src="https://image.ibb.co/fYzTrb/lastofus.jpg"></img>
+          <img src="dan.png" height="400px"></img>
         </div>
         <div className="details">
           {/* <h4 className="color1">You're not a Fossil! (YET)</h4>
