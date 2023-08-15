@@ -8,6 +8,13 @@ steps:
         gcloud auth configure-docker us-central1-docker.pkg.dev
         docker build -t us-central1-docker.pkg.dev/single-odyssey-305316/test-artifact-repository/birthday:$SHORT_SHA -t  us-central1-docker.pkg.dev/single-odyssey-305316/test-artifact-repository/birthday:latest .
         docker push --all-tags us-central1-docker.pkg.dev/single-odyssey-305316/test-artifact-repository/birthday
+  
+  - id: Deploy new Revison
+    name: 'gcr.io/cloud-builders/gcloud'
+    args:
+      - -c
+      - |
+        gcloud run deploy birthday --platform managed --project single-odyssey-305316 --image us-central1-docker.pkg.dev/single-odyssey-305316/test-artifact-repository/birthday:latest --region us-central1 --ingress all --service-account=terraform-srv-acc@single-odyssey-305316.iam.gserviceaccount.com --allow-unauthenticated
 
 options:
   logging: CLOUD_LOGGING_ONLY
