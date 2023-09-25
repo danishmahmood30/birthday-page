@@ -191,7 +191,7 @@ document.ontouchstart = evt => birth.onClick(evt)
     //end
     // console.log(birthday)
     // console.log(mm)
-    const countDown = new Date(2023, 7, 16, 0, 0, 0)
+    const countDown = new Date(2023, 8, 26, 0, 0, 0)
     // console.log(new Date().getMonth()),
      const x = setInterval(function() {    
 
@@ -206,7 +206,7 @@ document.ontouchstart = evt => birth.onClick(evt)
 
       //do something later when date is reached
       if (distance < 0) {
-        // document.getElementById("headline").innerText = "Happy Birthday, Radhika 💗";
+        // document.getElementById("headline").innerText = "Happy Birthday,💗";
         document.getElementById("countdown").style.display = "none";
         document.getElementById("headline").style.display = "none";
         document.getElementById("content").style.display = "block";
@@ -238,7 +238,7 @@ document.ontouchstart = evt => birth.onClick(evt)
   return (
     <div className="container">
       <canvas id="birthday"></canvas>
-      <h1 id="headline">Radhika, My Love</h1>
+      <h1 id="headline">ZAYA, My Love</h1>
       <div id="countdown">
         <ul>
           <li><span id="days"></span>days</li>
@@ -252,7 +252,7 @@ document.ontouchstart = evt => birth.onClick(evt)
         <img className="images" src="birthday-2.png" height="200px"></img>
         <div class="heart heart-bg"></div>
         <div class="heart heart-main" onClick={clickHere}>
-          <img src="https://see.fontimg.com/api/renderfont4/9Y5Xy/eyJyIjoiZnMiLCJoIjo4MSwidyI6MTI1MCwiZnMiOjY1LCJmZ2MiOiIjRkZGRUZFIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/UmFkaGlrYQ/loftygoals-regular.png" width="120px"></img>
+          <img src="https://see.fontimg.com/api/renderfont4/RpwrW/eyJyIjoiZnMiLCJoIjo3MSwidyI6MTI1MCwiZnMiOjU3LCJmZ2MiOiIjRkZGNUY1IiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/WmF5YQ/bisatta.png" width="120px"></img>
         </div>
         {/* <span>🥳</span>
         <span>🎉</span>
@@ -268,19 +268,17 @@ document.ontouchstart = evt => birth.onClick(evt)
         <div className="details">
           {/* <h4 className="color1">You're not a Fossil! (YET)</h4>
           <h4 className="color2 margin">(HAPPY BIRTHDAY)</h4> */}
-          <p>Dear Radhika♥,</p>
+          <p>Dear Zaya♥,</p>
           <br></br>
           <p>Happiest Birthday to you. I wish I could spent the best day on earth with you in person, holding your </p>
-          <p>hands but I think I still need to wait for that day.</p>
-          <p>My love, I wish you a very healthy and happy and prosperous life. A life I will do anything to be part of. </p>
-          <p>hate the music I’m into, you</p>
-          <p>Three months have passed and it feels that we have known each other for years</p>
-          <p>Babe, I love you more than anything in this world. I dont know what the future lies for us but I'm sure of one thing that I will always keep you happy and safe at the cost of my life. Just be with me, Love. Pleae never leave me. I wont be able to live without you.</p>
+          <p>hands. I wish you a very healthy and happy and prosperous life. A life I will do anything to be part of. </p>
+          <p>I know things haven't been good for the past couple of months. But I am hopeful it will get better eventually.</p>
+          <p>Till then,keep calm and stay strong and take care of </p>
+          <p>yourself. I dont know what the future hold for us but I'm sure it will be beautiful. </p>
           <p>I want you for always...days, years, eternities.</p>
-          <p>Just grow old along with me babe! The best is yet to be </p>
           <br></br>
           <p className="text-right">Love you always!</p>
-          <p className="text-right">♥Danish</p>
+          <p className="text-right">♥♥♥♥♥♥♥</p>
         </div>
       </div>
     </div>

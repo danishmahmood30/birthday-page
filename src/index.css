@@ -30,7 +30,7 @@ html, body {
 
 body {
   align-items: center;
-  background-color: #ffd54f;
+  background-color: #000000;
   display: flex;
   font-family: -apple-system, 
     BlinkMacSystemFont, 
@@ -46,7 +46,7 @@ body {
 
 
 .container {
-  color: #333;
+  color: #ffffff;
   margin: 0 auto;
   text-align: center;
   align-items: center;
@@ -226,7 +226,7 @@ h4 {
 	top: 0;
 	left: 0;
 	box-sizing: border-box;
-	padding: 0 0 0 10px;
+	padding: 60 0 0 10px;
 	z-index: -1;
 	margin-top: 40px;
   /* display: flex; */
@@ -344,5 +344,5 @@ h4 {
 
 .heart img {
   padding-top: 30px;
-  padding-left: 30px;
+  padding-left: 50px;
 }
